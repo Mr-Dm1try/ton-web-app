@@ -1197,4 +1197,4 @@ Values:
 `,Xue=Es.div`
   max-width: 900px;
   margin: 0 auto;
-`;function ece(){const{network:e}=Dm();return Vn(Jue,{children:Vn(Xue,{children:ku(iO,{children:[ku(ap,{children:[Vn(QZ,{}),Vn(aO,{children:e?e===sc.MAINNET?"mainnet":"testnet":"N/A"})]}),Vn(Yue,{})]})})})}const tce="https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json",rce=new ej({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});F4.createRoot(document.getElementById("root")).render(Vn(WZ,{manifestUrl:tce,children:Vn(sN,{client:rce,children:Vn(ece,{})})}));
+`;function ece(){const{network:e}=Dm();return Vn(Jue,{children:Vn(Xue,{children:ku(iO,{children:[ku(ap,{children:[Vn(QZ,{}),Vn(aO,{children:e?e===sc.MAINNET?"mainnet":"testnet":"N/A"})]}),Vn(Yue,{})]})})})}const tce="https://mr-dm1try.github.io/ton-web-app/public/tonconnect-manifest.json",rce=new ej({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});F4.createRoot(document.getElementById("root")).render(Vn(WZ,{manifestUrl:tce,children:Vn(sN,{client:rce,children:Vn(ece,{})})}));
