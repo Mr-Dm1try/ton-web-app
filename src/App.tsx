@@ -43,8 +43,8 @@ function App() {
                 : "N/A"}
             </Button>
           </FlexBoxRow>
-          <Counter />
-          <TransferTon />
+          {/* <Counter /> */}
+          {/* <TransferTon /> */}
           <Jetton />
         </FlexBoxCol>
       </AppContainer>

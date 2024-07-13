@@ -8,22 +8,28 @@ import {
   Button,
   Ellipsis,
 } from "./styled/styled";
+import { useJettonContract } from "../hooks/useJettonContract";
 
 export function Jetton() {
-  const { connected } = useTonConnect();
-  const { mint, jettonWalletAddress, balance } = useFaucetJettonContract();
+  const { connected, wallet } = useTonConnect();
+  // const { mint, jettonWalletAddress, balance } = useFaucetJettonContract();
+  const { jettonWalletAddress, balance, mint } = useJettonContract();
 
   return (
-    <Card title="Jetton">
+    < Card title="Jetton">
       <FlexBoxCol>
-        <h3>Faucet Jetton</h3>
+        <h3>Jetton</h3>
         <FlexBoxRow>
           Wallet
-          <Ellipsis>{jettonWalletAddress}</Ellipsis>
+          <Ellipsis>{wallet ? Address.parse(wallet as string).toString() : "Loading..."}</Ellipsis>
+        </FlexBoxRow>
+        <FlexBoxRow>
+          Jetton Wallet
+          <Ellipsis>{jettonWalletAddress ?? "Loading..."}</Ellipsis>
         </FlexBoxRow>
         <FlexBoxRow>
           Balance
-          <div>{balance ?? "Loading..."}</div>
+          <Ellipsis>{balance ?? "Loading..."}</Ellipsis>
         </FlexBoxRow>
         <Button
           disabled={!connected}
@@ -31,7 +37,7 @@ export function Jetton() {
             mint();
           }}
         >
-          Get jettons from faucet
+          Mint Jettons
         </Button>
       </FlexBoxCol>
     </Card>
