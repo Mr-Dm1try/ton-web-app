@@ -1197,4 +1197,4 @@ Values:
 `,XQ=Bo.div`
   max-width: 900px;
   margin: 0 auto;
-`;function eG(){const{network:e}=L1();return kn(JQ,{children:kn(XQ,{children:Vs(bE,{children:[Vs(Bd,{children:[kn(cF,{}),kn(wE,{children:e?e===El.MAINNET?"mainnet":"testnet":"N/A"})]}),kn(YQ,{})]})})})}const tG="https://mr-dm1try.github.io/ton-web-app/public/tonconnect-manifest.json",rG=new fB({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});Ky.createRoot(document.getElementById("root")).render(kn(lF,{manifestUrl:tG,children:kn(vT,{client:rG,children:kn(eG,{})})}));
+`;function eG(){const{network:e}=L1();return kn(JQ,{children:kn(XQ,{children:Vs(bE,{children:[Vs(Bd,{children:[kn(cF,{}),kn(wE,{children:e?e===El.MAINNET?"mainnet":"testnet":"N/A"})]}),kn(YQ,{})]})})})}const tG="https://mr-dm1try.github.io/ton-web-app/tonconnect-manifest.json",rG=new fB({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});Ky.createRoot(document.getElementById("root")).render(kn(lF,{manifestUrl:tG,children:kn(vT,{client:rG,children:kn(eG,{})})}));
