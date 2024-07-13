@@ -1,14 +1,14 @@
-import { beginCell, toNano, Address, Cell, fromNano } from "ton";
+import { Address } from "@ton/ton";
 import { useTonConnect } from "../hooks/useTonConnect";
-import { useFaucetJettonContract } from "../hooks/useFaucetJettonContract";
+// import { useFaucetJettonContract } from "../hooks/useFaucetJettonContract";
+import { useJettonContract } from "../hooks/useJettonContract";
 import {
+  Button,
   Card,
+  Ellipsis,
   FlexBoxCol,
   FlexBoxRow,
-  Button,
-  Ellipsis,
 } from "./styled/styled";
-import { useJettonContract } from "../hooks/useJettonContract";
 
 export function Jetton() {
   const { connected, wallet } = useTonConnect();
